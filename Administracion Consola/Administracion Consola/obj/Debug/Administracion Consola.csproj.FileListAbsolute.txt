@@ -1,0 +1,12 @@
+D:\Proyecto\Administracion Consola\Administracion Consola\bin\Debug\Administracion Consola.exe.config
+D:\Proyecto\Administracion Consola\Administracion Consola\bin\Debug\Administracion Consola.exe
+D:\Proyecto\Administracion Consola\Administracion Consola\bin\Debug\Administracion Consola.pdb
+D:\Proyecto\Administracion Consola\Administracion Consola\obj\Debug\Administracion Consola.csproj.AssemblyReference.cache
+D:\Proyecto\Administracion Consola\Administracion Consola\obj\Debug\Administracion_Consola.Form1.resources
+D:\Proyecto\Administracion Consola\Administracion Consola\obj\Debug\Administracion_Consola.Properties.Resources.resources
+D:\Proyecto\Administracion Consola\Administracion Consola\obj\Debug\Administracion Consola.csproj.GenerateResource.cache
+D:\Proyecto\Administracion Consola\Administracion Consola\obj\Debug\Administracion Consola.csproj.CoreCompileInputs.cache
+D:\Proyecto\Administracion Consola\Administracion Consola\obj\Debug\Administracion Consola.exe
+D:\Proyecto\Administracion Consola\Administracion Consola\obj\Debug\Administracion Consola.pdb
+D:\Proyecto\Administracion Consola\Administracion Consola\obj\Debug\Administracion_Consola.frmAgregarEmpleado.resources
+D:\Proyecto\Administracion Consola\Administracion Consola\obj\Debug\Administracion_Consola.frmAcceso.resources
