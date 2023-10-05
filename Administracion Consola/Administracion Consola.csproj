@@ -56,11 +56,11 @@
       <DependentUpon>AgregarEmpleado.cs</DependentUpon>
     </Compile>
     <Compile Include="Empleado.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Buscar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Buscar.Designer.cs">
+      <DependentUpon>Buscar.cs</DependentUpon>
     </Compile>
     <Compile Include="IHorario.cs" />
     <Compile Include="IRH.cs" />
@@ -88,8 +88,8 @@
     <EmbeddedResource Include="AgregarEmpleado.resx">
       <DependentUpon>AgregarEmpleado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Buscar.resx">
+      <DependentUpon>Buscar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Listar.resx">
       <DependentUpon>Listar.cs</DependentUpon>

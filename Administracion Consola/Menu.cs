@@ -107,5 +107,15 @@ namespace Administracion_Consola
         {
             AbrirformHija(new frmAgregarEmpleado());
         }
+
+        private void btmBuscar_Click(object sender, EventArgs e)
+        {
+            AbrirformHija(new Buscar());
+        }
+
+        private void btmListar_Click(object sender, EventArgs e)
+        {
+            AbrirformHija(new Listar());
+        }
     }
 }
