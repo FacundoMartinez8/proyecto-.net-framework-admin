@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAgregarEmpleado));
             this.label1 = new System.Windows.Forms.Label();
             this.labelNombre = new System.Windows.Forms.Label();
             this.labelApellido = new System.Windows.Forms.Label();
@@ -40,6 +41,11 @@
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.txtDni = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textRH = new System.Windows.Forms.TextBox();
+            this.txtRH = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtEmpleador = new System.Windows.Forms.TextBox();
+            this.Empleador = new System.Windows.Forms.Label();
             this.btmCancelarIngreso = new System.Windows.Forms.Button();
             this.btmIngresarDatos = new System.Windows.Forms.Button();
             this.cmbBoxGenero = new System.Windows.Forms.ComboBox();
@@ -140,7 +146,7 @@
             this.labelAntiguedad.AutoSize = true;
             this.labelAntiguedad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAntiguedad.ForeColor = System.Drawing.Color.White;
-            this.labelAntiguedad.Location = new System.Drawing.Point(465, 89);
+            this.labelAntiguedad.Location = new System.Drawing.Point(141, 132);
             this.labelAntiguedad.Name = "labelAntiguedad";
             this.labelAntiguedad.Size = new System.Drawing.Size(90, 16);
             this.labelAntiguedad.TabIndex = 7;
@@ -175,6 +181,12 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.textRH);
+            this.groupBox1.Controls.Add(this.txtRH);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.txtEmpleador);
+            this.groupBox1.Controls.Add(this.Empleador);
             this.groupBox1.Controls.Add(this.btmCancelarIngreso);
             this.groupBox1.Controls.Add(this.btmIngresarDatos);
             this.groupBox1.Controls.Add(this.cmbBoxGenero);
@@ -201,16 +213,67 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
+            // textRH
+            // 
+            this.textRH.BackColor = System.Drawing.Color.Gray;
+            this.textRH.Location = new System.Drawing.Point(774, 130);
+            this.textRH.Name = "textRH";
+            this.textRH.Size = new System.Drawing.Size(100, 20);
+            this.textRH.TabIndex = 22;
+            // 
+            // txtRH
+            // 
+            this.txtRH.AutoSize = true;
+            this.txtRH.BackColor = System.Drawing.Color.Transparent;
+            this.txtRH.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRH.ForeColor = System.Drawing.Color.White;
+            this.txtRH.Location = new System.Drawing.Point(625, 131);
+            this.txtRH.Name = "txtRH";
+            this.txtRH.Size = new System.Drawing.Size(142, 16);
+            this.txtRH.TabIndex = 21;
+            this.txtRH.Text = "Recursos Humanos";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(481, 88);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(90, 16);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "Antiguedad:";
+            // 
+            // txtEmpleador
+            // 
+            this.txtEmpleador.BackColor = System.Drawing.Color.Gray;
+            this.txtEmpleador.Location = new System.Drawing.Point(120, 131);
+            this.txtEmpleador.Name = "txtEmpleador";
+            this.txtEmpleador.Size = new System.Drawing.Size(100, 20);
+            this.txtEmpleador.TabIndex = 19;
+            // 
+            // Empleador
+            // 
+            this.Empleador.AutoSize = true;
+            this.Empleador.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Empleador.ForeColor = System.Drawing.Color.White;
+            this.Empleador.Location = new System.Drawing.Point(31, 135);
+            this.Empleador.Name = "Empleador";
+            this.Empleador.Size = new System.Drawing.Size(83, 16);
+            this.Empleador.TabIndex = 18;
+            this.Empleador.Text = "Empleador";
+            // 
             // btmCancelarIngreso
             // 
             this.btmCancelarIngreso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btmCancelarIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btmCancelarIngreso.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btmCancelarIngreso.Location = new System.Drawing.Point(484, 141);
+            this.btmCancelarIngreso.Location = new System.Drawing.Point(484, 154);
             this.btmCancelarIngreso.Name = "btmCancelarIngreso";
             this.btmCancelarIngreso.Size = new System.Drawing.Size(165, 35);
             this.btmCancelarIngreso.TabIndex = 17;
-            this.btmCancelarIngreso.Text = "CANCELAR INGRESO";
+            this.btmCancelarIngreso.Text = "CANCELAR ";
             this.btmCancelarIngreso.UseVisualStyleBackColor = false;
             // 
             // btmIngresarDatos
@@ -218,11 +281,11 @@
             this.btmIngresarDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btmIngresarDatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btmIngresarDatos.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btmIngresarDatos.Location = new System.Drawing.Point(297, 141);
+            this.btmIngresarDatos.Location = new System.Drawing.Point(297, 154);
             this.btmIngresarDatos.Name = "btmIngresarDatos";
             this.btmIngresarDatos.Size = new System.Drawing.Size(139, 35);
             this.btmIngresarDatos.TabIndex = 16;
-            this.btmIngresarDatos.Text = "INGRESAR DATOS";
+            this.btmIngresarDatos.Text = "Agregar Empleado";
             this.btmIngresarDatos.UseVisualStyleBackColor = false;
             this.btmIngresarDatos.Click += new System.EventHandler(this.btmIngresarDatos_Click);
             // 
@@ -279,11 +342,12 @@
             // 
             // listBoxEmpleados
             // 
-            this.listBoxEmpleados.BackColor = System.Drawing.Color.Teal;
+            this.listBoxEmpleados.BackColor = System.Drawing.Color.DarkCyan;
+            this.listBoxEmpleados.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listBoxEmpleados.FormattingEnabled = true;
             this.listBoxEmpleados.Location = new System.Drawing.Point(13, 226);
             this.listBoxEmpleados.Name = "listBoxEmpleados";
-            this.listBoxEmpleados.Size = new System.Drawing.Size(639, 251);
+            this.listBoxEmpleados.Size = new System.Drawing.Size(639, 247);
             this.listBoxEmpleados.TabIndex = 12;
             // 
             // btmEliminarEmpleado
@@ -297,6 +361,7 @@
             this.btmEliminarEmpleado.TabIndex = 13;
             this.btmEliminarEmpleado.Text = "Eliminar Empleado";
             this.btmEliminarEmpleado.UseVisualStyleBackColor = false;
+            this.btmEliminarEmpleado.Click += new System.EventHandler(this.btmEliminarEmpleado_Click);
             // 
             // btmSalirSinGuardar
             // 
@@ -327,6 +392,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(928, 498);
             this.Controls.Add(this.btmGuardar);
             this.Controls.Add(this.btmSalirSinGuardar);
@@ -368,5 +434,10 @@
         private System.Windows.Forms.Button btmEliminarEmpleado;
         private System.Windows.Forms.Button btmSalirSinGuardar;
         private System.Windows.Forms.Button btmGuardar;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtEmpleador;
+        private System.Windows.Forms.Label Empleador;
+        private System.Windows.Forms.TextBox textRH;
+        private System.Windows.Forms.Label txtRH;
     }
 }

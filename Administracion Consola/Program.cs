@@ -16,7 +16,16 @@ namespace Administracion_Consola
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Menu());
+
+            frmAcceso fAcceso = new frmAcceso();
+            if (fAcceso.ShowDialog() == DialogResult.OK)
+            {
+                Bienvenida bienvenida = new Bienvenida();
+                if (bienvenida.ShowDialog() == DialogResult.OK)
+                {
+                    Application.Run(new Menu());
+                }
+            }
         }
     }
 }

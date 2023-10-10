@@ -35,7 +35,7 @@
             this.Contraseña = new System.Windows.Forms.Label();
             this.Usuario = new System.Windows.Forms.Label();
             this.btmIngresar = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
             this.Acceso = new System.ComponentModel.BackgroundWorker();
             this.InicioDeSesion.SuspendLayout();
             this.SuspendLayout();
@@ -48,15 +48,14 @@
             this.InicioDeSesion.Controls.Add(this.Contraseña);
             this.InicioDeSesion.Controls.Add(this.Usuario);
             this.InicioDeSesion.Controls.Add(this.btmIngresar);
-            this.InicioDeSesion.Controls.Add(this.textBox1);
+            this.InicioDeSesion.Controls.Add(this.txtUsuario);
             this.InicioDeSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.InicioDeSesion.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.InicioDeSesion.Location = new System.Drawing.Point(47, 82);
             this.InicioDeSesion.Name = "InicioDeSesion";
-            this.InicioDeSesion.Size = new System.Drawing.Size(452, 220);
+            this.InicioDeSesion.Size = new System.Drawing.Size(660, 276);
             this.InicioDeSesion.TabIndex = 0;
             this.InicioDeSesion.TabStop = false;
-            this.InicioDeSesion.Text = "Inicio de sesiòn";
             this.InicioDeSesion.Enter += new System.EventHandler(this.InicioDeSesion_Enter);
             // 
             // label1
@@ -74,8 +73,10 @@
             // txtClave
             // 
             this.txtClave.BackColor = System.Drawing.SystemColors.WindowText;
-            this.txtClave.Location = new System.Drawing.Point(197, 104);
+            this.txtClave.ForeColor = System.Drawing.SystemColors.Window;
+            this.txtClave.Location = new System.Drawing.Point(363, 133);
             this.txtClave.Name = "txtClave";
+            this.txtClave.PasswordChar = '*';
             this.txtClave.Size = new System.Drawing.Size(185, 22);
             this.txtClave.TabIndex = 4;
             // 
@@ -84,7 +85,7 @@
             this.Contraseña.AutoSize = true;
             this.Contraseña.BackColor = System.Drawing.Color.Black;
             this.Contraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Contraseña.Location = new System.Drawing.Point(48, 104);
+            this.Contraseña.Location = new System.Drawing.Point(167, 121);
             this.Contraseña.Name = "Contraseña";
             this.Contraseña.Size = new System.Drawing.Size(86, 16);
             this.Contraseña.TabIndex = 3;
@@ -96,7 +97,7 @@
             this.Usuario.BackColor = System.Drawing.Color.Black;
             this.Usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Usuario.ForeColor = System.Drawing.SystemColors.Control;
-            this.Usuario.Location = new System.Drawing.Point(19, 63);
+            this.Usuario.Location = new System.Drawing.Point(134, 79);
             this.Usuario.Name = "Usuario";
             this.Usuario.Size = new System.Drawing.Size(146, 16);
             this.Usuario.TabIndex = 2;
@@ -108,7 +109,7 @@
             this.btmIngresar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btmIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btmIngresar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btmIngresar.Location = new System.Drawing.Point(170, 159);
+            this.btmIngresar.Location = new System.Drawing.Point(262, 201);
             this.btmIngresar.Name = "btmIngresar";
             this.btmIngresar.Size = new System.Drawing.Size(113, 38);
             this.btmIngresar.TabIndex = 1;
@@ -116,13 +117,14 @@
             this.btmIngresar.UseVisualStyleBackColor = false;
             this.btmIngresar.Click += new System.EventHandler(this.btmIngresar_Click);
             // 
-            // textBox1
+            // txtUsuario
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.WindowText;
-            this.textBox1.Location = new System.Drawing.Point(197, 60);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(185, 22);
-            this.textBox1.TabIndex = 0;
+            this.txtUsuario.BackColor = System.Drawing.SystemColors.WindowText;
+            this.txtUsuario.ForeColor = System.Drawing.SystemColors.Window;
+            this.txtUsuario.Location = new System.Drawing.Point(373, 76);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(185, 22);
+            this.txtUsuario.TabIndex = 0;
             // 
             // frmAcceso
             // 
@@ -131,7 +133,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(799, 393);
+            this.ClientSize = new System.Drawing.Size(949, 501);
             this.Controls.Add(this.InicioDeSesion);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -151,10 +153,10 @@
         private System.Windows.Forms.GroupBox InicioDeSesion;
         private System.ComponentModel.BackgroundWorker Acceso;
         private System.Windows.Forms.Button btmIngresar;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label Usuario;
         private System.Windows.Forms.Label Contraseña;
         private System.Windows.Forms.TextBox txtClave;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label Usuario;
+        private System.Windows.Forms.TextBox txtUsuario;
     }
 }

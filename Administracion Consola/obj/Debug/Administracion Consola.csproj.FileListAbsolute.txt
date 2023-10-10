@@ -12,3 +12,4 @@ D:\Proyecto\Administracion Consola\Administracion Consola\obj\Debug\Administraci
 D:\Proyecto\Administracion Consola\Administracion Consola\obj\Debug\Administracion_Consola.Listar.resources
 D:\Proyecto\Administracion Consola\Administracion Consola\obj\Debug\Administracion_Consola.Menu.resources
 D:\Proyecto\Administracion Consola\Administracion Consola\obj\Debug\Administracion_Consola.Buscar.resources
+D:\Proyecto\Administracion Consola\Administracion Consola\obj\Debug\Administracion_Consola.Bienvenida.resources
