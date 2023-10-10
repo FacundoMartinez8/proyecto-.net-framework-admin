@@ -29,15 +29,17 @@ namespace Administracion_Consola
 
         private void btmIngresar_Click(object sender, EventArgs e)
         {
-            if(txtClave.Text == "123456")
+            
+            if (txtClave.Text == "123456")
             {
                 this.DialogResult = DialogResult.OK;
+                Hide();
             }
             else
             {
                 this.DialogResult = DialogResult.No;
-            }
-            Hide();
-        }
+                Hide();
+            }            
+        }        
     }
 }

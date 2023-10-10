@@ -13,7 +13,7 @@ namespace Administracion_Consola
 {
     public partial class Menu : Form
     {
-        bool sidebarExpand;
+      
         public Menu()
         {
             InitializeComponent();
@@ -106,6 +106,21 @@ namespace Administracion_Consola
         private void btmAgregar_Click(object sender, EventArgs e)
         {
             AbrirformHija(new frmAgregarEmpleado());
+        }
+
+        private void btmBuscar_Click(object sender, EventArgs e)
+        {
+            AbrirformHija(new Buscar());
+        }
+
+        private void btmListar_Click(object sender, EventArgs e)
+        {
+            AbrirformHija(new Listar());
+        }
+
+        private void panelContenedor_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

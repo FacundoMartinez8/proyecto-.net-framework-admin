@@ -37,11 +37,9 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.btmListar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btmSalir = new System.Windows.Forms.Button();
-            this.btmSetting = new System.Windows.Forms.Button();
             this.btmBuscar = new System.Windows.Forms.Button();
             this.btmAgregar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -107,11 +105,9 @@
             this.MenuVertical.Controls.Add(this.panel7);
             this.MenuVertical.Controls.Add(this.panel6);
             this.MenuVertical.Controls.Add(this.panel5);
-            this.MenuVertical.Controls.Add(this.panel4);
             this.MenuVertical.Controls.Add(this.btmListar);
             this.MenuVertical.Controls.Add(this.pictureBox1);
             this.MenuVertical.Controls.Add(this.btmSalir);
-            this.MenuVertical.Controls.Add(this.btmSetting);
             this.MenuVertical.Controls.Add(this.btmBuscar);
             this.MenuVertical.Controls.Add(this.btmAgregar);
             this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
@@ -152,14 +148,6 @@
             this.panel5.Size = new System.Drawing.Size(5, 32);
             this.panel5.TabIndex = 1;
             // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel4.Location = new System.Drawing.Point(14, 416);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(5, 32);
-            this.panel4.TabIndex = 0;
-            // 
             // btmListar
             // 
             this.btmListar.FlatAppearance.BorderSize = 0;
@@ -175,6 +163,7 @@
             this.btmListar.TabIndex = 19;
             this.btmListar.Text = "Listar";
             this.btmListar.UseVisualStyleBackColor = true;
+            this.btmListar.Click += new System.EventHandler(this.btmListar_Click);
             // 
             // pictureBox1
             // 
@@ -204,23 +193,6 @@
             this.btmSalir.UseVisualStyleBackColor = true;
             this.btmSalir.Click += new System.EventHandler(this.btmExit_Click);
             // 
-            // btmSetting
-            // 
-            this.btmSetting.FlatAppearance.BorderSize = 0;
-            this.btmSetting.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.btmSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btmSetting.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btmSetting.ForeColor = System.Drawing.Color.White;
-            this.btmSetting.Image = ((System.Drawing.Image)(resources.GetObject("btmSetting.Image")));
-            this.btmSetting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btmSetting.Location = new System.Drawing.Point(25, 416);
-            this.btmSetting.Name = "btmSetting";
-            this.btmSetting.Size = new System.Drawing.Size(175, 32);
-            this.btmSetting.TabIndex = 15;
-            this.btmSetting.Text = "Setting";
-            this.btmSetting.UseVisualStyleBackColor = true;
-            this.btmSetting.Click += new System.EventHandler(this.btmSetting_Click_1);
-            // 
             // btmBuscar
             // 
             this.btmBuscar.FlatAppearance.BorderSize = 0;
@@ -236,6 +208,7 @@
             this.btmBuscar.TabIndex = 16;
             this.btmBuscar.Text = "Buscar";
             this.btmBuscar.UseVisualStyleBackColor = true;
+            this.btmBuscar.Click += new System.EventHandler(this.btmBuscar_Click);
             // 
             // btmAgregar
             // 
@@ -336,6 +309,7 @@
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(773, 411);
             this.panelContenedor.TabIndex = 8;
+            this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
             // 
             // Menu
             // 
@@ -385,10 +359,8 @@
         private System.Windows.Forms.Button btmListar;
         private System.Windows.Forms.Button btmSalir;
         private System.Windows.Forms.Button btmAgregar;
-        private System.Windows.Forms.Button btmSetting;
         private System.Windows.Forms.Button btmBuscar;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel7;
